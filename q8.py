@@ -23,12 +23,6 @@ def countOdds(arr):
     return count
 
 
-def displayReverse(arr):
-    for i in range(len(arr)-1, -1, -1):
-        print(arr[i], end=" ")
-    print()
-
-
 def find(arr, x):
     if x not in arr:
         return -1
@@ -51,5 +45,50 @@ def common_members(arr1, arr2):
     return common_elements
 
 
+def input_list(arr, n):
+    for i in range(n):
+        element = eval(input(f"Enter {i+1}th element : "))
+        arr.append(element)
 
 
+my_list_1 = []
+n = int(input("Enter number of elements : "))
+input_list(my_list_1, n)
+
+
+if isNums(my_list_1):
+    print("It is a numeric list")
+    print(f"Odd values : {countOdds(my_list_1)}")
+
+if isStrings(my_list_1):
+    print("It is a string list")
+    print(f"Largest string : {max(my_list_1)}")
+
+
+print(f"Reversed list : {my_list_1[::-1]}")
+
+x = eval(input("Enter element to be searched : "))
+pos = find(my_list_1, x)
+
+if pos == -1:
+    print(f"{x} not found in list")
+else:
+    print(f"{x} found in list at {pos}")
+
+if isNums(my_list_1) or isStrings(my_list_1):
+    my_list_1.sort(reverse=True)
+    print(f"List sorted in descending order : {my_list_1}")
+else:
+    print("Can't sort mixed list")
+
+
+l1 = []
+n1 = int(input("Enter number of elements of list 1 : "))
+input_list(l1, n1)
+
+l2 = []
+n2 = int(input("Enter number of elements of list 2 : "))
+input_list(l2, n2)
+
+commons = common_members(l1, l2)
+print(f"Common members : {commons}")
