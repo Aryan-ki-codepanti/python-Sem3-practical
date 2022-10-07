@@ -81,7 +81,7 @@ if isNums(my_list_1) or isStrings(my_list_1):
 else:
     print("Can't sort mixed list")
 
-
+print("Finding common members")
 l1 = []
 n1 = int(input("Enter number of elements of list 1 : "))
 input_list(l1, n1)

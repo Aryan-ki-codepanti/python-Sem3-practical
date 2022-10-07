@@ -1,7 +1,4 @@
 
-from cgitb import reset
-
-
 def factorial(n):
     if n <= 1:
         return n
@@ -13,8 +10,12 @@ def fibonacci(n):
         return n
     return fibonacci(n - 1) + fibonacci(n - 2)
 
+
 def fib_fac(n):
     result = [fibonacci(n), factorial(n)]
     return result
 
 
+if __name__ == "__main__":
+    n = int(input("Enter a number : "))
+    print(f"fibonacci and factorial : {fib_fac(n)}")

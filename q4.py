@@ -1,7 +1,4 @@
 
-from re import L
-
-
 def get_digits(n):
     assert n >= 10, "Number should be >= 10"
     # return set(str(n))
@@ -13,4 +10,5 @@ def get_digits(n):
     return digits
 
 
-print(get_digits(34))
+n = int(input("Enter a number : "))
+print(f"Digits : {get_digits(n)}")

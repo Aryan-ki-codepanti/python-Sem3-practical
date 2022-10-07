@@ -18,6 +18,7 @@ while True:
     print("3. Replace vowels with '#'")
     print("4. Number of words in a string")
     print("5. Checking if string is a palindrome")
+    print("6. Exit")
     choice = input("Enter your choice: ")
 
     if choice == '6':

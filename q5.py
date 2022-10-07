@@ -13,4 +13,7 @@ def series(x, n):
 
     return result
 
-print(series(1,3))
+
+x = int(input("Enter x : "))
+n = int(input("Enter n : "))
+print(f"Result : {series(x,n)}")
