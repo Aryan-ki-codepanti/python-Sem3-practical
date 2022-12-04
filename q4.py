@@ -11,4 +11,5 @@ def get_digits(n):
 
 
 n = int(input("Enter a number : "))
+assert n > 0, "Number should be positive atleast"
 print(f"Digits : {get_digits(n)}")

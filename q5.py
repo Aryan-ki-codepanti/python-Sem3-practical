@@ -16,4 +16,5 @@ def series(x, n):
 
 x = int(input("Enter x : "))
 n = int(input("Enter n : "))
+assert n > 0, "n should be greater than zero"
 print(f"Result : {series(x,n)}")

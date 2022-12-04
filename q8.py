@@ -53,6 +53,7 @@ def input_list(arr, n):
 
 my_list_1 = []
 n = int(input("Enter number of elements : "))
+assert n > 0, "n should be positive"
 input_list(my_list_1, n)
 
 

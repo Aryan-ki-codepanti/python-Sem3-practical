@@ -17,5 +17,3 @@ l2 = list(t2)
 l1.extend(l2)
 t1 = tuple(l1)
 print(f"New t1 : {t1}")
-
-

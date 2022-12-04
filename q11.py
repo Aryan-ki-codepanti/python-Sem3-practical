@@ -71,6 +71,7 @@ def input_array(arr, n):
 
 
 n = int(input("Enter number of students : "))
+assert n > 0, "n should be greater than zero"
 students = []
 input_array(students, n)
 
